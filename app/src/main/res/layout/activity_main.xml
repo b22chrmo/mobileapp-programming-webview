@@ -23,10 +23,12 @@
             app:popupTheme="@style/AppTheme.PopupOverlay" />
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/my_webview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Chrilles text" />
+            android:text="Chrilles text"
+            />
+
 
     </com.google.android.material.appbar.AppBarLayout>
 
