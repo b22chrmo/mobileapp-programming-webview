@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -25,7 +26,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        WebView webview = findViewById(R.id.my_webview);
+        WebView myWebView = findViewById(R.id.my_webview);
+        myWebView.setWebViewClient(new WebViewClient());
 
         /*
         * Rename your App. Tip: Values->Strings
