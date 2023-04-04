@@ -7,6 +7,38 @@ _Du kan ta bort all text som finns sedan tidigare_.
 
 ## Följande grundsyn gäller dugga-svar:
 
+I assignment 2 så har jag ändrat namn på applikationen, sedan lagt till tillgång till internet.
+Efter att jag skapade ett WebView element så skapades ett WebViewClient som kopplades till WebView
+elementet. Sedan gjorde jag javascript tillgängligt i WebViewClient och la till en länk som ska
+ladda in i min WebView. Den här länken las in i metoderna som var kopplade till de menu items som
+fanns i dropdown menyn. Sedan tog jag två screenshots på både internal och external web page.
+Samma länk används i internal och external web page.
+
+```
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    Toolbar toolbar = findViewById(R.id.toolbar);
+    setSupportActionBar(toolbar);
+    myWebView = findViewById(R.id.my_webview);
+    myWebView.setWebViewClient(new WebViewClient());
+    myWebView.getSettings().setJavaScriptEnabled(true);
+}
+```
+```
+if (id == R.id.action_external_web) {
+    Log.d("==>","Will display external web page");
+    showExternalWebPage();
+    return true;
+}
+
+if (id == R.id.action_internal_web) {
+    Log.d("==>","Will display internal web page");
+    showInternalWebPage();
+    return true;
+}
+```
+
 - Ett kortfattat svar är att föredra. Svar som är längre än en sida text (skärmdumpar och programkod exkluderat) är onödigt långt.
 - Svaret skall ha minst en snutt programkod.
 - Svaret skall inkludera en kort övergripande förklarande text som redogör för vad respektive snutt programkod gör eller som svarar på annan teorifråga.
