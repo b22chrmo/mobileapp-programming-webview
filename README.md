@@ -1,12 +1,6 @@
 
 # Rapport
 
-**Skriv din rapport här!**
-
-_Du kan ta bort all text som finns sedan tidigare_.
-
-## Följande grundsyn gäller dugga-svar:
-
 I assignment 2 så har jag ändrat namn på applikationen, sedan lagt till tillgång till internet.
 Efter att jag skapade ett WebView element så skapades ett WebViewClient som kopplades till WebView
 elementet. Sedan gjorde jag javascript tillgängligt i WebViewClient och la till en länk som ska
