@@ -60,6 +60,8 @@ function errorCallback(error) {
 Bilder läggs i samma mapp som markdown-filen.
 
 ![](android.png)
+![](Screenshot_20230425_151656.png)
+![](Screenshot_20230425_151714.png)
 
 Läs gärna:
 
